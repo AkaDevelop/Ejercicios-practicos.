@@ -9,6 +9,9 @@
 
     /*Bolt*/
 }
+body{
+    align-items: center;
+}
 
 h1{
     color: var(--Dark-red-color);
