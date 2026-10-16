@@ -21,6 +21,16 @@ if (residue !== 0){
     console.log("Número par.")
 }
 
+//**Validar contraseña*/
+const password_true = "admin123"
+let password_input = prompt("Ingrese la contraseña: ");
+if (password_input === password_true){
+    console.log("Acceso permitido")
+} else{
+    console.log("Acceso denegado")
+}
+
+
 /**Switch/Case */
 console.log("Menú de opciones:")
 console.log("1. Sumar")
