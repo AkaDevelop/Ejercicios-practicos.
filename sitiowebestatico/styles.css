@@ -20,3 +20,9 @@ p {
 body{
     background-color: var(--Background-color);
 }
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
