@@ -1,0 +1,19 @@
+:root {
+    /*Colors*/
+    --Dark-red-color: #4d0101;
+    --Background-color: #000;
+
+    /*FontSize*/
+    --fontsize-xs: 0.9rem;
+
+
+    /*Bolt*/
+}
+
+h1{
+    color: var(--Dark-red-color);
+}
+
+body{
+    background-color: var(--Background-color);
+}
