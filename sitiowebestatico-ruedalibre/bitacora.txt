@@ -1,0 +1,12 @@
+URL = http://127.0.0.1:5500/favicon.ico
+REQUEST = GET/HTTP
+HOST= 127.0.0.1:5500
+PORT= 5500
+METHOD= GET
+STATUSCODE= 304 NOT MODIFIED
+RUTE= /sitiowebestatico-ruedalibre/
+
+HTML = Maquetación
+CSS = Stilo/diseño
+JS = Funcionalidad/Lógica 
+
