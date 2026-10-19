@@ -5,3 +5,8 @@ PORT= 5500
 METHOD= GET
 STATUSCODE= 304 NOT MODIFIED
 RUTE= /sitiowebestatico-ruedalibre/
+
+HTML = Maquetación
+CSS = Stilo/diseño
+JS = Funcionalidad/Lógica 
+
