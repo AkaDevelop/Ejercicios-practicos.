@@ -19,10 +19,11 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     background: linear-gradient(
-        45deg,
-        var(--Background-color), 85%,
+        95deg,
+        var(--Background-color), 25%,
         var(--gray-color)
     );
     background-size: contain;
@@ -31,6 +32,7 @@ body{
     background-attachment:fixed;
     min-height: 100vh;
     font-family: "Changa One", sans-serif; 
+    margin: 10px;
 }
 
 h1{
@@ -53,9 +55,18 @@ div{
     justify-content: space-between;
     align-items: center;
     background-color: var(--Dark-black-color);
-    padding: 10px 1px;
+    padding: 20px 40px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.685);
     border-radius: 5px;
+    height: 70px;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+    display: flex;
 }
 .navbar li{
     display: inline-block;
@@ -73,7 +84,6 @@ div{
     color: var(--White);
     text-decoration: none;
     padding: 10px;
-    gap: 10px;
 }
 
 .active{
@@ -88,3 +98,39 @@ div{
     transform: scale(1.1);
 }
 
+main{
+    max-width: 95%;
+    display: grid;  
+    justify-content: center;   
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.inicio-hero {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap:5px;
+}
+
+.hero-image{
+    transform: scale(.65);
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-color: linear-gradient(
+        180deg,
+        var(--White), 85%,
+        var(--Dark-black-color)
+    );
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.911);
+}
+
+.hero-text{
+    width: 800px;
+    display:inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
