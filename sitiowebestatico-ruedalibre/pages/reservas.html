@@ -35,12 +35,17 @@
                     <fieldset>
                         <legend>Información de contacto</legend>
                             <label for="nombre" >Nombre:</label>
-                            <input type="text" id="nombre" placeholder="Pepito Luis" name="nombre" required>
+                            <input type="text" id="nombre" placeholder="Pepito Luis" name="nombre" minlength="3" required>
+                            <label for="documento" >Documento:</label>
+                            <input type="number" id="documento" 
+                                placeholder="126752489" name="documento" 
+                                minlength="6" maxlength="10" required>
                             <label for="email">Correo electrónico:</label>
                             <input type="email" id="email" placeholder="pepito@ejemplo.com" name="email" required>
                             <label for="telefono">Teléfono:</label>
-                            <input type="tel" id="telefono" placeholder="+57 4 123 4567" name="telefono" required>
-                    </fieldset>
+                            <input type="tel" id="telefono" placeholder="+57 4 123 4567" name="telefono" maxlength="10"
+                            minlength="10" pattern="^3.*" title="El número de telefóno debe iniciar por 3" required>
+                    </fieldset> 
                     <fieldset>
                         <legend>Detalles de la reserva</legend>
                             <label for="bicicleta">Tipo de bicicleta:</label>
