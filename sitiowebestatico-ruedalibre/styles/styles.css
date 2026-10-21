@@ -9,7 +9,7 @@
     --gray-color: #080303;
     --desert-color: #fdab6c;
     --desert-color-darker: #fd9647;
-    --navbar-color: #111111;
+    --navbar-color: #2c2622ce;
     --button-color: #9c917c;
     --button-color-dark: #301212;
     /*FontSize*/
@@ -74,6 +74,11 @@ div{
     align-items: center;
     justify-content: center;
 }
+
+.linklogo:hover{
+    transform: scale(1.2);
+    border-radius: 50% !important;
+}
 .navbar{
     position:sticky;
     top: 1px;   
@@ -81,7 +86,10 @@ div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--Dark-black-color);
+    background: linear-gradient(    
+        55deg,
+        var(--navbar-color)), 50%,
+        var(--Dark-black-color) ;
     padding: 20px 40px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.685);
     border-radius: 5px;
@@ -142,11 +150,18 @@ main{
     z-index: 1
 }
 
-.inicio-hero {
+.inicio-hero{
     margin: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
+}
+
+.inicio-hero article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
 }
 
 .hero-image{
@@ -254,4 +269,34 @@ a{
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.instrucciones{
+    margin-top: 40px;
+    color: var(--White);
+    margin-bottom: 40px;
+}
+
+.instrucciones ol{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.instrucciones li{
+    margin-bottom: 10px;
+}
+
+.servicios{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--White);
+}
+
+.logo-brand{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
 }
