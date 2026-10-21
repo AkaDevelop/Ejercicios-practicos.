@@ -31,23 +31,32 @@
                         <a href="tel:+5741234567"><strong>+57 4 123 4567</strong></a>
                     </p>
                 </div>
-                <form action="mailto:info@ruedalibre.com" method="post">
+                <form class= "form-reserva" action="mailto:info@ruedalibre.com" method="post">
                     <fieldset>
                         <legend>Información de contacto</legend>
-                            <label for="nombre" >Nombre:</label>
-                            <input type="text" id="nombre" placeholder="Pepito Luis" name="nombre" minlength="3" required>
-                            <label for="documento" >Documento:</label>
-                            <input type="number" id="documento" 
+                            <p>
+                                <label for="nombre" >Nombre:</label>
+                                <input type="text" id="nombre" placeholder="Pepito Luis" name="nombre" minlength="3" required>
+                            </p>
+                            <p> 
+                                <label for="documento" >Documento:</label>
+                                <input type="number" id="documento" 
                                 placeholder="126752489" name="documento" 
                                 minlength="6" maxlength="10" required>
-                            <label for="email">Correo electrónico:</label>
-                            <input type="email" id="email" placeholder="pepito@ejemplo.com" name="email" required>
-                            <label for="telefono">Teléfono:</label>
-                            <input type="tel" id="telefono" placeholder="+57 4 123 4567" name="telefono" maxlength="10"
-                            minlength="10" pattern="^3.*" title="El número de telefóno debe iniciar por 3" required>
+                            </p>
+                            <p>
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" id="email" placeholder="pepito@ejemplo.com" name="email" required>
+                            </p>
+                            <p>
+                                <label for="telefono">Teléfono:</label>
+                                <input type="tel" id="telefono" placeholder="+57 4 123 4567" name="telefono" maxlength="10"
+                                minlength="10" pattern="^3.*" title="El número de telefóno debe iniciar por 3" required>
+                            </p>
                     </fieldset> 
                     <fieldset>
                         <legend>Detalles de la reserva</legend>
+                        <p>
                             <label for="bicicleta">Tipo de bicicleta:</label>
                             <select id="bicicleta" name="bicicleta" required>
                                 <option value="" disabled selected>Selecciona una opción</option>
@@ -55,24 +64,35 @@
                                 <option value="montana">Montaña</option>
                                 <option value="electrica">Eléctrica</option>
                             </select>
+                        </p>
+                        <p>
                             <label for="fecha_inicio">Fecha de inicio:</label>
-                            <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+                            <input type="date" id="fecha_inicio" name="fecha_inicio" required>                            
+                        </p>
+                        <p>
                             <label for="hora_inicio">Hora de inicio:</label>
                             <input type="time" id="hora_inicio" name="hora_inicio" required>
+                        </p>
+                        <p>
                             <label for="fecha_fin">Fecha de fin:</label>
                             <input type="date" id="fecha_fin" name="fecha_fin" required>
+                        </p>
+                        <p>
                             <label for="hora_fin">Hora de fin:</label>
                             <input type="time" id="hora_fin" name="hora_fin" required>
-                            
+                        </p>                            
                     </fieldset>
                     <fieldset>
                         <legend>Confirmación adicional</legend>
+                        <p>
                             <label for="recorrido">Recorrido guiado:</label>
                             <select id="recorrido" name="recorrido" required>
                                 <option value="" disabled selected>Seleccione una opción</option>
                                 <option value="si">Sí</option>
                                 <option value="no">No</option>
                             </select>
+                        </p>
+                        <p> 
                             <label for="recorridoname">Nombre del recorrido:</label>
                             <select name="recorridoname" id="recorridoname">
                                 <option value="" disabled selected>Seleccione una opción</option>
@@ -80,8 +100,11 @@
                                 <option value="nombre2">Sabores de barrio</option>
                                 <option value="nombre3">Reto las palmas</option>
                             </select>
+                        </p>
+                        <p>
                             <label for="mensaje">Mensaje adicional:</label>
                             <textarea id="mensaje" name="mensaje" placeholder="Agrega un texto opcional"></textarea>
+                        </p>
                             <button type="submit">Enviar solicitud</button>
                     </fieldset>
                 </form>
