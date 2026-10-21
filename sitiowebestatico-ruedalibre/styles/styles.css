@@ -290,8 +290,8 @@ a{
 }
 
 .logo-brand{
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
     display: flex;
     justify-content: center;
     align-items: center;
