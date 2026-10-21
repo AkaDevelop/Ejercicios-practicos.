@@ -1,12 +1,12 @@
 :root {
     /*Colors*/
     --Dark-red-color: #fffefe;
-    --Background-color: #080808f0;
+    --Background-color: #121111f2;
     --White: #fff;
     --White-hover: rgba(255, 255, 255, 0.149);
     --White-active: rgba(255, 255, 255, 0.19);
     --Dark-black-color: #090808;
-    --gray-color: #444242;
+    --gray-color: #080303;
     --desert-color: #fdab6c;
     --desert-color-darker: #fd9647;
     --navbar-color: #111111;
@@ -28,8 +28,8 @@
 
 body{
     background: linear-gradient(
-        95deg,
-        var(--Background-color), 85%,
+        55deg,
+        var(--Background-color) ,15%,
         var(--gray-color)
     );
     background-size: contain;
@@ -38,6 +38,7 @@ body{
     background-attachment:fixed;
     min-height: 100vh;
     font-family: "Changa One", sans-serif; 
+    font-size: 1.3rem;
     margin: 10px;
     overflow-x: hidden;
 }
@@ -45,14 +46,13 @@ body{
 .circulo{
     position: absolute;
     border-radius: 50%;
-    width: 1000px;
-    height: 1000px;
-    background-color: var(--desert-color);
+    width: 600px;
+    height: 600px;
+    background-color: var(--desert-color-darker);
     opacity: 0.4;
-    top: 10%;
-    left: 10%;
-    filter: blur(800px);
-    border: 28px solid var(--desert-color-darker);
+    top: 15%;
+    left: 15%;
+    filter: blur(300px);
     z-index: -1;
     display: flex;
     align-items: center;
@@ -108,6 +108,11 @@ h2{
     color: var(--White);
 }
 
+.contacto div{
+    display: flex;
+    gap: 20px;
+}
+
 .navbar a{
     color: var(--White);
     text-decoration: none;
@@ -130,6 +135,7 @@ main{
     max-width: 95%;
     display: flex;  
     gap: 120px;
+    padding: 5px;
     justify-content: center;   
     align-items: center;
     flex-wrap: wrap;
@@ -188,10 +194,15 @@ main{
     text-align: center;
 }
 
-.hero-buttons{
+.acerca div{
+    width: 60%;
+}
+
+.hero-buttons a{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
     gap: 80px;
     margin-top: 20px;
     background: linear-gradient(180deg, var(--button-color), var(--button-color-dark));
@@ -199,6 +210,7 @@ main{
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
+
 
 .hero-buttons:hover{
     transform: scale(1.05);
@@ -210,7 +222,7 @@ main{
     cursor: pointer;
 }
 
-.hero-button-tarifas{
+.hero-button-tarifas a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,7 +231,7 @@ main{
     background: linear-gradient(180deg, var(--button-color), var(--button-color-dark));
     padding: 10px 20px;
     border-radius: 5px;
-    width: 40%;
+    width: 100%;
     transition: transform 0.3s ease;
 }
 
@@ -233,4 +245,13 @@ a{
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr, 1fr;
+}
+
+.logo-img img{
+    width: 200px; 
+    height: 200px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
