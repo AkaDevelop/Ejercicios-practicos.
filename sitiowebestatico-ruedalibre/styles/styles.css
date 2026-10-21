@@ -75,10 +75,7 @@ div{
     justify-content: center;
 }
 
-.linklogo:hover{
-    transform: scale(1.2);
-    border-radius: 50% !important;
-}
+
 .navbar{
     position:sticky;
     top: 1px;   
@@ -299,4 +296,9 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;    
+}
+
+.linklogo:hover{
+    transform: scale(1.2);
+    border-radius: 50% !important;
 }
