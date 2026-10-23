@@ -14,8 +14,10 @@
     --button-color-dark: #301212;
     --black-color: #0000;
     /*FontSize*/
-    --fontsize-xs: 0.9rem;
-    
+    --fontsize-xs: 0.8rem;
+    --fontsize-m: 1.2rem;
+    --fontsize-l: 1.4rem;
+    --fontsize-xl: 1.6rem;
 
     /*Bolt*/
     --Bolt-400: 400;
@@ -24,6 +26,11 @@
 
     --general-spaces: 2.5rem;
     --two-general-spaces: 1.2rem;
+    --three-general-spaces: 0.6rem;
+
+    /*Shadows*/
+
+    --box-shadows-black: rgba(0, 0, 0, 0.911);
 }
 
 *{
@@ -45,9 +52,9 @@ body{
     background-attachment:fixed;
     min-height: 100vh;
     font-family: "Open Sans", sans-serif; 
-    font-size: 1.2rem;
+    font-size: var(--fontsize-m);
     font-weight:400;
-    margin: 10px;
+    margin: var(--three-general-spaces);
     overflow-x: hidden;
 }
 /*Estilos para el circulo de fondo*/
@@ -106,7 +113,7 @@ div{
         var(--navbar-color)), 50%,
         var(--Dark-black-color) ;
     padding: var(--two-general-spaces) var(--general-spaces);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.685);
+    box-shadow: 0px 2px 5px var(--box-shadows-black);
     border-radius: 5px;
     height: 70px;
     z-index: 1000;
@@ -139,7 +146,7 @@ h2{
 .navbar a{
     color: var(--White);
     text-decoration: none;
-    padding: 10px;
+    padding: var(--three-general-spaces);
 }
 
 .active{
@@ -156,7 +163,8 @@ h2{
 
 .linklogo:hover{
     transform: scale(1.2);
-    border-radius: 50% !important;
+    border-radius: 50% !important; /*Este parametro !important se usó para un detalle adicional en la navbar, no esta
+    definido en el alcance del reto, además eliminarlo no altera la experiencia intuitiva del navegador principal de la pagina*/
 }
 
 main{
@@ -193,7 +201,7 @@ main{
         var(--White), 35%,
         var(--Dark-black-color)
     );
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.911);
+    box-shadow: 2px 2px 15px var(--box-shadows-black);
     justify-content: center;
     align-items: center;
     display: flex;
@@ -237,11 +245,11 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.85rem;
+    font-size: var(--fontsize-xs);
     gap: 80px;
     margin-top: var(--two-general-spaces);
     background: linear-gradient(180deg, var(--button-color), var(--button-color-dark));
-    padding: 10px var(--two-general-spaces);
+    padding: var(--three-general-spaces) var(--two-general-spaces);
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
@@ -264,7 +272,7 @@ main{
     gap: 80px;
     margin-top: var(--two-general-spaces);
     background: linear-gradient(180deg, var(--button-color), var(--button-color-dark));
-    padding: 10px var(--two-general-spaces);
+    padding: var(--three-general-spaces) var(--two-general-spaces);
     border-radius: 5px;
     width: 100%;
     transition: transform 0.3s ease;
@@ -273,7 +281,7 @@ main{
 a{
     color: var(--White);
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: var(--fontsize-m);
 }
 
 .hero-text div{
@@ -298,12 +306,12 @@ a{
 }
 
 .instrucciones ol{
-    margin-top: 10px;
+    margin-top: var(--three-general-spaces);
     margin-left: var(--general-spaces);
 }
 
 .instrucciones li{
-    margin-bottom: 10px;
+    margin-bottom: var(--three-general-spaces);
 }
 
 .servicios{
@@ -315,4 +323,5 @@ a{
 .form-reserva {
     display: block;
 }
+
 
