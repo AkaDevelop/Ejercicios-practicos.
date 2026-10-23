@@ -1,9 +1,6 @@
 Algoritmo saludo
-	
-	Definir nombre Como Caracter
-	
-	Imprimir  "Digita tu nombre: "
+	Definir nombre Como Cadena
+	Escribir 'Digita tu nombre: '
 	Leer nombre
-	
-	Imprimir "Hola " + nombre + " bienvenido al ejercicio de pseint en Riwi"
+	Escribir 'Hola '+nombre+' bienvenido al ejercicio de pseint en Riwi'
 FinAlgoritmo
