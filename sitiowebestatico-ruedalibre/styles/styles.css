@@ -326,4 +326,14 @@ a{
     gap: var(--three-general-spaces);
 }
 
+table{
+    width: 1000px;
+    height: 200px;
+    align-items: center;
+    border: 4px solid #fffdfd;
+}
 
+td, th{
+    background: linear-gradient(180deg,#000000d8, 89%, #7e3f1b) ;
+    border: 1px solid #ffffff;
+}
