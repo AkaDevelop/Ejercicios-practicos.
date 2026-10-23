@@ -53,7 +53,7 @@ body{
     min-height: 100vh;
     font-family: "Open Sans", sans-serif; 
     font-size: var(--fontsize-m);
-    font-weight:400;
+    font-weight:var(--Bolt-400);
     margin: var(--three-general-spaces);
     overflow-x: hidden;
 }
@@ -322,6 +322,8 @@ a{
 
 .form-reserva {
     display: block;
+    padding: var(--general-spaces);
+    gap: var(--three-general-spaces);
 }
 
 
