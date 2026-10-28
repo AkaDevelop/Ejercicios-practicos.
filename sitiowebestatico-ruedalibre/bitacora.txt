@@ -1,4 +1,6 @@
-URL = http://127.0.0.1:5500/favicon.ico
+
+URL = http://127.0.0.1:5500/sitiowebestatico-ruedalibre/index.html
+ERROR = http://127.0.0.1:5500/favicon.ico 401 Not found. // Se soluciona agregando un link - rel: "icon"
 REQUEST = GET/HTTP
 HOST= 127.0.0.1:5500
 PORT= 5500
