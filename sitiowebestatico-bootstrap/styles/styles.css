@@ -1,0 +1,366 @@
+:root {
+    /*Colors*/
+    --Dark-red-color: #fffefe;
+    --Background-color: #121111f2;
+    --White: #fff;
+    --White-hover: rgba(255, 255, 255, 0.149);
+    --White-active: rgba(255, 255, 255, 0.19);
+    --Dark-black-color: #090808;
+    --gray-color: #080303;
+    --desert-color: #fdab6c;
+    --desert-color-darker: #fd9647;
+    --navbar-color: #2c2622ce;
+    --button-color: #9c917c;
+    --button-color-dark: #301212;
+    --black-color: #0000;
+    /*FontSize*/
+    --fontsize-xs: 0.8rem;
+    --fontsize-m: 1.2rem;
+    --fontsize-l: 1.4rem;
+    --fontsize-xl: 1.6rem;
+
+    /*Bolt*/
+    --Bolt-400: 400;
+    --Bolt-700: 700;
+    /*Size*/
+
+    --general-spaces: 2.5rem;
+    --two-general-spaces: 1.2rem;
+    --three-general-spaces: 0.6rem;
+
+    /*Shadows*/
+
+    --box-shadows-black: rgba(0, 0, 0, 0.911);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: linear-gradient(
+        55deg,
+        var(--Background-color) ,15%,
+        var(--gray-color)
+    );
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif; 
+    font-size: var(--fontsize-m);
+    font-weight:var(--Bolt-400);
+    margin: var(--three-general-spaces);
+    overflow-x: hidden;
+}
+/*Estilos para el circulo de fondo*/
+.circulo{
+    position: absolute;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    background-color: var(--desert-color-darker);
+    opacity: 0.4;
+    top: 15%;
+    left: 15%;
+    filter: blur(300px);
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2{
+    color: var(--White);
+    text-shadow: 3px 3px 2px var(--black-color);
+    font-family: "Montserrat", sans-serif; 
+}
+
+p {
+    color: var(--White);
+}
+
+
+div{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-brand{
+    width: var(--general-spaces);
+    height: var(--general-spaces);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+
+.navbar{
+    position:sticky;
+    top: 1px;   
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(    
+        55deg,
+        var(--navbar-color)), 50%,
+        var(--Dark-black-color) ;
+    padding: var(--two-general-spaces) var(--general-spaces);
+    box-shadow: 0px 2px 5px var(--box-shadows-black);
+    border-radius: 5px;
+    height: 70px;
+    z-index: 1000;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+    display: flex;
+}
+.navbar li{
+    display: inline-block;
+}
+
+h2{
+    color: var(--White);
+}
+
+.contacto h2{
+    color: var(--White);
+}
+
+.contacto div{
+    display: flex;
+    gap: var(--two-general-spaces);
+}
+
+.navbar a{
+    color: var(--White);
+    text-decoration: none;
+    padding: var(--three-general-spaces);
+}
+
+.active{
+    background-color: var(--White-active);
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+.navbar a:hover{
+    background-color: var(--White-active);
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+.linklogo:hover{
+    transform: scale(1.2);
+    border-radius: 50% !important; /*Este parametro !important se usó para un detalle adicional en la navbar, no esta
+    definido en el alcance del reto, además eliminarlo no altera la experiencia intuitiva del navegador principal de la pagina*/
+}
+
+main{
+    max-width: 95%;
+    display: flex;  
+    gap: 120px;
+    padding: 5px;
+    justify-content: center;   
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1
+}
+
+.inicio-hero{
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.inicio-hero article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+.hero-image{
+    width: 100%; 
+    height: 100%;
+    border-radius: 15px;
+    background: linear-gradient(
+        180deg,
+        var(--White), 35%,
+        var(--Dark-black-color)
+    );
+    box-shadow: 2px 2px 15px var(--box-shadows-black);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.hero-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.hero-text{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+.hero-text section{
+    display:flex;
+    gap: var(--two-general-spaces);
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+.acerca{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.acerca div{
+    width: 60%;
+}
+
+.hero-buttons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fontsize-xs);
+    gap: 80px;
+    margin-top: var(--two-general-spaces);
+    background: linear-gradient(180deg, var(--button-color), var(--button-color-dark));
+    padding: var(--three-general-spaces) var(--two-general-spaces);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+
+.hero-buttons:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.hero-button-tarifas:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.hero-button-tarifas a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: var(--two-general-spaces);
+    background: linear-gradient(180deg, var(--button-color), var(--button-color-dark));
+    padding: var(--three-general-spaces) var(--two-general-spaces);
+    border-radius: 5px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+a{
+    color: var(--White);
+    text-decoration: none;
+    font-size: var(--fontsize-m);
+}
+
+.hero-text div{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr, 1fr;
+}
+
+.logo-img img{
+    width: 200px; 
+    height: 200px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.instrucciones{
+    margin-top: var(--general-spaces);
+    color: var(--White);
+    margin-bottom: var(--general-spaces);
+}
+
+.instrucciones ol{
+    margin-top: var(--three-general-spaces);
+    margin-left: var(--general-spaces);
+}
+
+.instrucciones li{
+    margin-bottom: var(--three-general-spaces);
+}
+
+.servicios{
+    margin-top: var(--general-spaces);
+    margin-bottom: var(--general-spaces);
+    color: var(--White);
+}
+
+.form-reserva {
+    display: block;
+    padding: var(--general-spaces);
+    gap: var(--three-general-spaces);
+}
+
+table{
+    width: 1000px;
+    height: 200px;
+    align-items: center;
+    border: 4px solid #fffdfd;
+}
+
+td, th{
+    background: linear-gradient(180deg,#000000d8, 89%, #7e3f1b) ;
+    border: 1px solid #ffffff;
+}
+
+.whatsapp-float{
+    position:fixed;
+    top: 90%;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px green;
+    margin-left: 95%;
+    background-color: #25d366;
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    transition: transform 0.3s ease;
+    animation: whatsapp-float-move 0.8s ease-in-out infinite; 
+}
+
+.whatsapp-float:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 15px green;
+}
+
+@keyframes whatsapp-float-move {
+    0%, 100% {
+        transform: translateY(0);
+    } 50%{
+        transform: translateY(-6px);
+    }
+}
