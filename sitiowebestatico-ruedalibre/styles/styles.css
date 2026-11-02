@@ -54,7 +54,6 @@ body{
     font-family: "Open Sans", sans-serif; 
     font-size: var(--fontsize-m);
     font-weight:var(--Bolt-400);
-    margin: var(--three-general-spaces);
     overflow-x: hidden;
 }
 /*Estilos para el circulo de fondo*/
@@ -92,8 +91,8 @@ div{
 }
 
 .logo-brand{
-    width: var(--general-spaces);
-    height: var(--general-spaces);
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -361,6 +360,6 @@ td, th{
     0%, 100% {
         transform: translateY(0);
     } 50%{
-        transform: translateY(-8px);
+        transform: translateY(-3px);
     }
 }
