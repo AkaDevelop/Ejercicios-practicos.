@@ -5,28 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Cuartas Jiménez | Personal portfolio </title>
     <meta name="description" content="This a personal portfolio project.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="Navbar">
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <header class="Navbar dark:bg-gray-800 rounded-lg dark:border-gray-900 shadow-md dark:shadow-gray-700">
         <a href="">
-                Logo
+                <img src="img/logo.png" alt="Logo" class="logo scale-100 hover:scale-105 transition-all duration-300">
         </a>
         <nav>
             <ul>
-                <li> <a href="">HOME</a></li>
-                <li> <a href="#projects">Projects</a></li>
-                <li> <a href="#about"> About me</a></li>
-                <li> <a href="#contact">Contact me</a></li>
+                <li> <a class="text-white hover:text-gray-300" href="">HOME</a></li>
+                <li> <a class="text-white hover:text-gray-300" href="#projects">Projects</a></li>
+                <li> <a class="text-white hover:text-gray-300" href="#skills"> My skills</a></li>
+                <li> <a class="text-white hover:text-gray-300" href="#contact">Contact me</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="principal-hero">
-            <h1><strong>Hi, I'm Juan Daniel</strong></h1>
-            <p>Riwi coder</p>
+    <main class="gap-8 py-8 px-4">
+        <div class="principal-hero flex flex-col items-center justify-center text-center">
+            <h1><strong>Hi, I'm Juan Daniel Cuartas Jiménez</strong></h1>
+            <p>I'm a passionate software developer from Training Center Riwi, specializing in creating efficient and scalable web applications
+                using modern tecnhologies. I have a strong foundation in programming languages such as JavaScript, Python, and Java, 
+                and I'm constantly learning new tools and frameworks to stay up-to-date with the latest industry trends.
+            </p>
         </div>
+
+        <section class="skills" id="about">
+            <div class="profileskill-image">
+                <img src="img/yo.jpg" alt="Juan Daniel Cuartas Jiménez" class="rounded-full w-48 h-48 object-cover">
+            </div>
+
+            <div class="skills-text">
+                <h2>My skills</h2>  
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>CSS Tailwind (Learning)</li>
+                    <li>Next.js (Learning)</li>
+                    <li>Node.js (Learning)</li>
+                    <li>FastAPI</li>
+                    <li>Alembic</li>
+                    <li>Pydantic</li>
+                    <li>PostgreSQL</li>
+                    <li>Git & GitHub</li>
+                    <li>Neon</li>
+                    <li>CloudFlare R2</li>
+                    <li>CloudFlare Workers</li>
+                    <li>CloudFlare Pages</li>
+                    <li>Render</li>
+                    <li>Resend</li>                 
+                </ul>
+            </div>
+        </section>
 
         <section class="personal-projects" id="projects">
             <article class="project">
@@ -49,11 +83,6 @@
                 <h2>Portfolio JCJDevelop | Next.js learning</h2>
                 <p></p>
             </article>
-        </section>
-
-        <section class="aboutme" id="about">
-            <h2>About me</h2>
-            <p></p>
         </section>
 
         <section class="contactme" id="#contact">
