@@ -305,9 +305,15 @@ a{
     margin-bottom: var(--three-general-spaces);
 }
 
-.servicios{
+section{
     margin-top: var(--general-spaces);
-    margin-bottom: var(--general-spaces);
+}
+
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin-bottom: var(--two-general-spaces);
     color: var(--White);
 }
 
@@ -340,6 +346,15 @@ td, th{
     transform: scale(1.1);
     box-shadow: 0px 2px 15px green;
 }
+
+footer{
+    display: flex;
+    align-items: flex-end;
+    top:90%;
+    position: static;
+    justify-content: center;
+}
+
 
 @keyframes whatsapp-float-move {
     0%, 100% {

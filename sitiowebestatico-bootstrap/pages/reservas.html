@@ -35,43 +35,44 @@
     </header>
 
     <main>
-            <section class="servicios">
+            
+            <div>       
+                <p>Haz tu reserva enviándonos una solicitud por 
+                    <a href="mailto:info@ruedalibre.com"><strong>CORREO</strong></a>
+                    rellenado el formulario de contacto, o llamándonos al 
+                    <a href="tel:+5741234567"><strong>+57 4 123 4567</strong></a>
+                </p>
+            </div>        
+            <section>
 
-                <div>
-                    <p>Haz tu reserva enviándonos una solicitud por 
-                        <a href="mailto:info@ruedalibre.com"><strong>CORREO</strong></a>
-                       rellenado el formulario de contacto, o llamándonos al 
-                        <a href="tel:+5741234567"><strong>+57 4 123 4567</strong></a>
-                    </p>
-                </div>
-                <form class= "form-reserva" action="mailto:info@ruedalibre.com" method="post">
-                    <fieldset>
+                <form class="servicios" action="mailto:info@ruedalibre.com" method="post">
+                    <div class="form-field">
                         <legend>Información de contacto</legend>
                             <p>
-                                <label for="nombre" >Nombre:</label>
-                                <input type="text" id="nombre" placeholder="Pepito Luis" name="nombre" minlength="3" required>
+                                <label class="form-label" for="nombre" >Nombre:</label>
+                                <input class="form-control" type="text" id="nombre" placeholder="Pepito Luis" name="nombre" minlength="3" required>
                             </p>
                             <p> 
-                                <label for="documento" >Documento:</label>
-                                <input type="number" id="documento" 
+                                <label class="form-label" for="documento" >Documento:</label>
+                                <input class="form-control" type="number" id="documento" 
                                 placeholder="126752489" name="documento" 
                                 minlength="6" maxlength="10" required>
                             </p>
                             <p>
-                                <label for="email">Correo electrónico:</label>
-                                <input type="email" id="email" placeholder="pepito@ejemplo.com" name="email" required>
+                                <label class="form-label" for="email">Correo electrónico:</label>
+                                <input class="form-control" type="email" id="email" placeholder="pepitoflorez@ejemplo.com" name="email" required>
                             </p>
                             <p>
-                                <label for="telefono">Teléfono:</label>
-                                <input type="tel" id="telefono" placeholder="+57 4 123 4567" name="telefono" maxlength="10"
+                                <label class="form-label" for="telefono">Teléfono:</label>
+                                <input class="form-control" type="tel" id="telefono" placeholder="+57 4 123 4567" name="telefono" maxlength="10"
                                 minlength="10" pattern="^3.*" title="El número de telefóno debe iniciar por 3" required>
                             </p>
-                    </fieldset> 
+                    </div> 
                     <fieldset>
                         <legend>Detalles de la reserva</legend>
                         <p>
-                            <label for="bicicleta">Tipo de bicicleta:</label>
-                            <select id="bicicleta" name="bicicleta" required>
+                            <label class="form-label" for="bicicleta">Tipo de bicicleta:</label>
+                            <select class="form-control w-12" id="bicicleta" name="bicicleta" required>
                                 <option value="" disabled selected>Selecciona una opción</option>
                                 <option value="urbana">Urbana</option>
                                 <option value="montana">Montaña</option>
@@ -79,35 +80,35 @@
                             </select>
                         </p>
                         <p>
-                            <label for="fecha_inicio">Fecha de inicio:</label>
-                            <input type="date" id="fecha_inicio" name="fecha_inicio" required>                            
+                            <label class="form-label" for="fecha_inicio">Fecha de inicio:</label>
+                            <input class="form-control w-12" type="date" id="fecha_inicio" name="fecha_inicio" required>                            
                         </p>
                         <p>
-                            <label for="hora_inicio">Hora de inicio:</label>
-                            <input type="time" id="hora_inicio" name="hora_inicio" required>
+                            <label class="form-label" for="hora_inicio">Hora de inicio:</label>
+                            <input class="form-control w-12" type="time" id="hora_inicio" name="hora_inicio" required>
                         </p>
                         <p>
-                            <label for="fecha_fin">Fecha de fin:</label>
-                            <input type="date" id="fecha_fin" name="fecha_fin" required>
+                            <label class="form-label" for="fecha_fin">Fecha de fin:</label>
+                            <input class="form-control w-12" type="date" id="fecha_fin" name="fecha_fin" required>
                         </p>
                         <p>
-                            <label for="hora_fin">Hora de fin:</label>
-                            <input type="time" id="hora_fin" name="hora_fin" required>
+                            <label class="form-label" for="hora_fin">Hora de fin:</label>
+                            <input class="form-control w-12" type="time" id="hora_fin" name="hora_fin" required>
                         </p>                            
                     </fieldset>
                     <fieldset>
                         <legend>Confirmación adicional</legend>
                         <p>
-                            <label for="recorrido">Recorrido guiado:</label>
-                            <select id="recorrido" name="recorrido" required>
+                            <label class="form-label" for="recorrido">Recorrido guiado:</label>
+                            <select class="form-control" id="recorrido" name="recorrido" required>
                                 <option value="" disabled selected>Seleccione una opción</option>
                                 <option value="si">Sí</option>
                                 <option value="no">No</option>
                             </select>
                         </p>
                         <p> 
-                            <label for="recorridoname">Nombre del recorrido:</label>
-                            <select name="recorridoname" id="recorridoname">
+                            <label class="form-label" for="recorridoname">Nombre del recorrido:</label>
+                            <select class="form-control" name="recorridoname" id="recorridoname">
                                 <option value="" disabled selected>Seleccione una opción</option>
                                 <option value="nombre1">Rios Parque</option>
                                 <option value="nombre2">Sabores de barrio</option>
@@ -115,10 +116,10 @@
                             </select>
                         </p>
                         <p>
-                            <label for="mensaje">Mensaje adicional:</label>
-                            <textarea id="mensaje" name="mensaje" placeholder="Agrega un texto opcional"></textarea>
+                            <label class="form-label" for="mensaje">Mensaje adicional:</label>
+                            <textarea class="form-control" rows="7" id="mensaje" name="mensaje" placeholder="Agrega un texto opcional"></textarea>
                         </p>
-                            <button type="submit">Enviar solicitud</button>
+                            <button class="" type="submit">Enviar solicitud</button>
                     </fieldset>
                 </form>
             </section> 
