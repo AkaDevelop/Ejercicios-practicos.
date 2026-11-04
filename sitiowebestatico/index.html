@@ -8,7 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200"> 
+    <div class="bg-grid-linear"></div>
     <header class="Navbar dark:bg-gray-800 rounded-lg dark:border-gray-900 shadow-md dark:shadow-gray-700">
         <a href="">
                 <img src="img/logo.png" alt="Logo" class="logo scale-100 hover:scale-105 transition-all duration-300">
@@ -17,73 +18,126 @@
             <ul>
                 <li> <a class="text-white hover:text-gray-300" href="">HOME</a></li>
                 <li> <a class="text-white hover:text-gray-300" href="#projects">Projects</a></li>
-                <li> <a class="text-white hover:text-gray-300" href="#skills"> My skills</a></li>
                 <li> <a class="text-white hover:text-gray-300" href="#contact">Contact me</a></li>
             </ul>
         </nav>
     </header>
+    <br>
+    <main class="gap-8 py-8 px-4 my-8 z-10">
+        <div class="profileskill-image flex flex-row items-center justify-center text-center">
+               
+                <img src="img/profileimage-1.webp" alt="Juan Daniel Cuartas Jiménez" class="rounded-full w-58 h-58 object-cover relative shadow-lg dark:shadow-gray-700">
+                <img src="img/174361908.png" alt="JCJDevelop" class="rounded-full w-58 h-58 object-cover shadow-lg right-10 relative shadow-lg dark:shadow-gray-700">
+        </div>
+                     <br>
 
-    <main class="gap-8 py-8 px-4">
-        <div class="principal-hero flex flex-col items-center justify-center text-center">
-            <h1><strong>Hi, I'm Juan Daniel Cuartas Jiménez</strong></h1>
-            <p>I'm a passionate software developer from Training Center Riwi, specializing in creating efficient and scalable web applications
+            <br>
+        <div class="principal-hero flex flex-col gap-4 items-center justify-center text-center my-8">
+            <h1 class="text-3xl font-bold mb-4">Hi, I'm Juan Daniel Cuartas Jiménez</h1>
+            <p class="width-200 max-w-2xl text-md mb-4">
+                I'm a passionate software developer from Training Center Riwi, specializing in creating efficient and scalable web applications
                 using modern tecnhologies. I have a strong foundation in programming languages such as JavaScript, Python, and Java, 
                 and I'm constantly learning new tools and frameworks to stay up-to-date with the latest industry trends.
             </p>
         </div>
 
         <section class="skills" id="about">
-            <div class="profileskill-image">
-                <img src="img/logo.png" alt="Juan Daniel Cuartas Jiménez" class="rounded-full w-48 h-48 object-cover">
-            </div>
 
-            <div class="skills-text">
-                <h2>My skills</h2>  
-                <ul>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>CSS Tailwind (Learning)</li>
-                    <li>Next.js (Learning)</li>
-                    <li>Node.js (Learning)</li>
-                    <li>FastAPI</li>
-                    <li>Alembic</li>
-                    <li>Pydantic</li>
-                    <li>PostgreSQL</li>
-                    <li>Git & GitHub</li>
-                    <li>Neon</li>
-                    <li>CloudFlare R2</li>
-                    <li>CloudFlare Workers</li>
-                    <li>CloudFlare Pages</li>
-                    <li>Render</li>
-                    <li>Resend</li>                 
+              <br>
+                  <br>  
+            <div class="skills-description text-center">
+                <h2 class="text-2xl font-bold mb-4">MY SKILLS</h2>
+                <br>
+              
+                <ul class="skills-list flex flex-wrap justify-center gap-4 mt-4">    
+                    <li class="flex p-7 w-50 items-center justify-center gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                        <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>JavaScript Vanilla 
+                    </li>
+                    <li class="flex w-50 h-20 items-center justify-center  gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img width="48" height="48" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1"/>Python
+                    </li>
+                    <li class="flex w-50 h-20 items-center justify-center  gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>HTML5
+                    </li>
+                    <li class="flex w-50 h-20 items-center justify-center  gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img width="48" height="48" src="https://img.icons8.com/color/48/css3--v1.png" alt="css3--v1"/>CSS3
+                    </li>
+                    <li class="flex w-50 h-20  items-center justify-center  gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img width="48" height="48" src="https://img.icons8.com/fluency/96/tailwind_css.png" alt="tailwind_css"/>Tailwind CSS (Learning)
+                    </li>
+                    <li class="flex w-50 h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img width="48" height="48" src="https://img.icons8.com/color/48/nextjs--v1.png" alt="nextjs--v1"/>Next.js (Learning)
+                    </li>
+                    <li class="flex w-50 h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img width="64" height="64" src="https://img.icons8.com/windows/64/node-js.png" alt="node-js"/>Node.js (Learning)
+                    </li>
+                    <li class="flex w-50 h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img width="48" height="48" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/fastapi.png" alt="fastapi--v1"/>FastAPI (Reviewing)
+                    </li>
+                    <li class="flex w-50 h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img width="48" height="48" src="https://img.icons8.com/emoji/48/alembic.png" alt="alembic"/>Alembic (Reviewing)
+                    </li>
+                    <li class="flex w-50 h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img width="48" height="48" src="https://dashboardicons.com/api/icons/external/simpleicons/pydantic/light.png" alt="pydantic--v1"/>Pydantic (Reviewing)
+                    </li>
+                    <li class="flex w-50 h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img width="48" height="48" src="https://img.icons8.com/color/48/postgreesql.png" alt="postgreesql"/>PostgreSQL (Reviewing)
+                    </li> 
+                    <li class="flex w-50 h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img shadow-2xl width="48" height="48" src="https://img.icons8.com/color/48/git--v1.png" alt="git--v1"/>Git & GitHub
+                    </li>
+                    <li class="flex w-50 h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img width="48" height="48" src="https://cdn.simpleicons.org/neon/34D59A" alt="neon--v1"/>Neon
+                    </li>
+                    <li class="flex w-50 h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img shadow-2xl width="24" height="24" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-cloudflare-provides-content-delivery-network-services-ddos-mitigation-logo-color-tal-revivo.png" alt="external-cloudflare-provides-content-delivery-network-services-ddos-mitigation-logo-color-tal-revivo"/>CloudFlare
+                    </li>
+                    <li class="flex w-50 h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-2xl dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img shadow-2xl width="48" height="48" src="https://cdn.simpleicons.org/render/FFFFFF" alt="render--v1"/>Render
+                    </li>
+                    <li class="flex w-50 shadow-xl/30   h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 dark:shadow-gray-700 bg-gray-200 dark:bg-gray-900 hover:scale-105 transition-all duration-300">
+                      <img class="shadow-md dark:shadow-gray-700 rounded-full" width="60" height="60" src="https://cdn.simpleicons.org/resend/FFFFFF" alt="resend--v1"/>Resend
+                    </li>
                 </ul>
             </div>
         </section>
-
-        <section class="personal-projects" id="projects">
-            <article class="project">
-                <h2>CRM JCJDevelop</h2>
-                <p></p>
-            </article>
-            <article  class="project">
-                <h2>AkaMenezBeat Store | Beat Catalog and CRUD AdminPanel</h2>
-                <p></p>
-            </article>
-            <article  class="project">
-                <h2>Blesed Fruit ERP</h2>
-                <p></p>
-            </article>
-            <article  class="project">
-                <h2>Digital QR menu | GoogleSheets Admin</h2>
-                <p></p>
-            </article>
-            <article  class="project">
-                <h2>Portfolio JCJDevelop | Next.js learning</h2>
-                <p></p>
-            </article>
-        </section>
+        <br>
+                <br>
+                        <br>
+                                <br>
+                                        <br>
+                                                <br>
+        <br class="line w-100 h-1 bg-gray-300 dark:bg-gray-700 rounded-lg shadow-md dark:shadow-gray-700">
+        <div class="flex justify-center items-center flex-col"><h2 class="text-2xl font-bold mb-4">MY PERSONAL PROJECTS</h2></div>
+            <br class="line w-100 h-1 bg-gray-300 dark:bg-gray-700 rounded-lg shadow-md dark:shadow-gray-700">
+            <section class="personal-projects flex flex-wrap gap-12 justify-center items-center" id="projects">
+                <article class="project flex flex-col gap-10 items-center justify-center text-center w-100 h-100 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-xl dark:shadow-red-700 hover:scale-105 transition-all duration-300">
+                    <img src="path/to/project-image.jpg" alt="Project Image" class="rounded-full w-48 h-48 object-cover relative shadow-lg dark:shadow-gray-700">
+                    <h2><strong>CRM JCJDevelop | Customer Relationship Management </strong></h2>
+                    <p>This is a customer relationship management system for handling client interactions and data.</p>
+                </article>
+                <article  class="project flex flex-col gap-10 items-center justify-center text-center w-100 h-100 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-xl dark:shadow-green-700 hover:scale-105 transition-all duration-300">
+                    <img src="path/to/project-image.jpg" alt="Project Image" class="rounded-full w-48 h-48 object-cover relative shadow-lg dark:shadow-gray-700">
+                    <h2><strong>AkaMenezBeat Store | Beat catalog and management</strong></h2>
+                    <p>This is a beat catalog and management system for handling music inventory and sales.</p>
+                </article>
+                <article  class="project flex flex-col gap-10 items-center justify-center text-center w-100 h-100 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-xl dark:shadow-red-700 hover:scale-105 transition-all duration-300">
+                    <img src="path/to/project-image.jpg" alt="Project Image" class="rounded-full w-48 h-48 object-cover relative shadow-lg dark:shadow-gray-700">
+                    <h2><strong>Blesed Fruit ERP/POS | Website for inventory auditing and transaction management</strong></h2>
+                    <p>This is a ERP/POS system for managing inventory and transactions of a textil business.</p>
+                </article>
+                <article  class="project flex flex-col gap-10 items-center justify-center text-center w-100 h-100 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-xl dark:shadow-green-700 hover:scale-105 transition-all duration-300">
+                    <img src="path/to/project-image.jpg" alt="Project Image" class="rounded-full w-48 h-48 object-cover relative shadow-lg dark:shadow-gray-700">
+                    <h2><strong>Digital QR menu | GoogleSheets ProductViewAdmin</strong></h2>
+                    <p>This is a digital QR menu system integrated with Google Sheets for product view and administration.</p>
+                </article>
+                <article class="project flex flex-col gap-10 items-center justify-center text-center w-100 h-100 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-xl dark:shadow-red-700 hover:scale-105 transition-all duration-300">
+                    <img src="path/to/project-image.jpg" alt="Project Image" class="rounded-full w-48 h-48 object-cover relative shadow-lg dark:shadow-gray-700">
+                    <h2><strong>Portfolio JCJDevelop</strong></h2>  
+                    <p>This is a simple portfolio and its management content with Next.js (Learning while developing)</p>
+                </article>
+            </section>
+        </div>
 
         <section class="contactme" id="#contact">
             <h2>Contact me</h2>
