@@ -13,8 +13,9 @@
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
     <div class="bg-grid-linear"></div>
     <header class="Navbar dark:bg-gray-900 rounded-lg dark:border-gray-900 shadow-xl/30 dark:shadow-black-800">
-        <a href="">
+        <a class="flex flex-row justify-center items-center gap-4" href="index.html">       
             <img src="img/logo.png" alt="Logo" class="logo scale-100 hover:scale-105 transition-all duration-300">
+            <strong>Personal Riwi Portfolio</strong>
         </a>
         <nav>
             <ul>
@@ -140,7 +141,12 @@
                         <img class="shadow-md rounded-full" width="60" height="60"
                             src="https://cdn.simpleicons.org/resend/FFFFFF" alt="resend--v1" />Resend
                     </li>
-                </ul>
+                    <li
+                        class="flex w-50 shadow-md   h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-800 rounded-lg p-2 dark:shadow-gray-800 bg-gray-200 dark:bg-gray-950 hover:scale-101 transition-all duration-300">
+                        <img width="48" height="48" src="https://img.icons8.com/fluency/48/bootstrap.png"
+                            alt="bootstrap" />Bootstrap
+                    </li>
+                </ul>   
             </div>
         </section>
         <br>
@@ -154,23 +160,30 @@
         <br>
         <section class="personal-projects flex flex-wrap gap-8 justify-center items-center">
             <article
-                class="project flex flex-col gap-4 items-center justify-center text-center w-100 h-130 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
+                class="project flex flex-col gap-4 items-center justify-center text-center w-100 h-150 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
                 <span class="text-red-300"><strong>On builting</strong></span>
                 <img src="img/app-en-construccion.svg" alt="Project Image"
                     class="flex rounded-full w-48 h-48 object-cover">
                 <h2><strong>CRM JCJDevelop | Customer Relationship Management </strong></h2>
-                <p>This is a customer relationship management system <br> for handling client interactions and data.</p>
+                <p>This is a customer relationship management system <br> for handling client interactions, projects and
+                    data.</p>
                 <div class="flex flex-col">
-                    <h2><strong>Infrastructure</strong></h2>
-                    <ul class="flex flex-wrap gap-4">
+                    <h2 style="margin-bottom: 8px;
+                               margin-top: 10px;">
+                        <strong>Infrastructure</strong>
+                    </h2>
+                    <ul class="flex flex-wrap gap-2 items-center justify-center">
                         <li>
-                            <p>Tailwind CSS</p>
+                            <p>TailwindCSS</p>
                         </li>
                         <li>
                             <p>JavaScript/TypeScript</p>
                         </li>
                         <li>
                             <p>Next.js</p>
+                        </li>
+                        <li>
+                            <p>FastAPI</p>
                         </li>
                     </ul>
                 </div>
@@ -183,19 +196,40 @@
 
             </article>
             <article
-                class="project flex flex-col gap-3 items-center justify-center text-center w-100 h-130 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-xl dark:shadow-green-200 bg-gray-900 hover:scale-101 transition-all duration-300">
+                class="project flex flex-col gap-3 items-center justify-center text-center w-100 h-150 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-green-200 bg-gray-900 hover:shadow-green-800 hover:shadow-xl hover:scale-101 transition-all duration-300">
                 <span class="text-green-200"><strong>On production</strong></span>
                 <img src="img/homeimage2.avif" alt="Project Image" class="rounded-full w-48 h-48 object-cover relative">
                 <h2><strong>AkaMenezBeat Store | Beat catalog and management</strong></h2>
                 <p>This is a beat catalog and management system for handling music inventory and sales.</p>
                 <div class="flex flex-col">
-                    <h2><strong>Infrastructure</strong></h2>
-                    <ul class="flex flex-wrap gap-4">
+                    <h2 style="margin-bottom: 8px;
+                               margin-top: 10px;">
+                        <strong>Infrastructure</strong>
+                    </h2>
+                    <ul class="flex flex-wrap gap-2 items-center justify-center">
                         <li>
                             <p>Render</p>
                         </li>
                         <li>
                             <p>FastAPI</p>
+                        </li>
+                        <li>
+                            <p>CloudFlare (R2 & Pages/Worker)</p>
+                        </li>
+                        <li>
+                            <p>HTML</p>
+                        </li>
+                        <li>
+                            <p>CSS3</p>
+                        </li>
+                        <li>
+                            <p>JavaScript</p>
+                        </li>
+                        <li>
+                            <p>Neon | PostgreSQL</p>
+                        </li>
+                        <li>
+                            <p>Resend (MailService)</p>
                         </li>
                     </ul>
                 </div>
@@ -207,7 +241,7 @@
                 </div>
             </article>
             <article
-                class="project flex flex-col gap-4 items-center justify-center text-center w-100 h-130 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-xl dark:shadow-green-700 bg-gray-900 hover:scale-101 transition-all duration-300">
+                class="project flex flex-col gap-3 items-center justify-center text-center w-100 h-150 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-green-200 bg-gray-900 hover:shadow-green-800 hover:shadow-xl hover:scale-101 transition-all duration-300">
                 <span class="text-green-200"><strong>On production</strong></span>
                 <img src="img/logo-licorera.svg" alt="Project Image"
                     class="rounded-full w-48 h-48 object-cover relative">
@@ -215,16 +249,25 @@
                 <p>This is a digital QR menu system integrated with <br> Google Sheets for product view and
                     administration.</p>
                 <div class="flex flex-col">
-                    <h2><strong>Infrastructure</strong></h2>
-                    <ul class="flex flex-wrap gap-4">
+                    <h2 style="margin-bottom: 8px;
+                               margin-top: 10px;">
+                        <strong>Infrastructure</strong>
+                    </h2>
+                    <ul class="flex flex-wrap gap-2 items-center justify-center">
                         <li>
-                            <p>Tailwind CSS</p>
+                            <p>TailwindCSS</p>
                         </li>
                         <li>
                             <p>JavaScript</p>
                         </li>
                         <li>
                             <p>HTML</p>
+                        </li>
+                        <li>
+                            <p>AppScript</p>
+                        </li>
+                        <li>
+                            <p>GoogleSheets</p>
                         </li>
                     </ul>
                 </div>
@@ -238,7 +281,7 @@
                 </div>
             </article>
             <article
-                class="project flex flex-col gap-4 items-center justify-center text-center w-100 h-130 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-xl dark:shadow-red-700 bg-gray-900 hover:scale-101 transition-all duration-300">
+                class="project flex flex-col gap-4 items-center justify-center text-center w-100 h-150 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
                 <span class="text-red-300"><strong>On builting</strong></span>
                 <img src="img/app-en-construccion.svg" alt="Project Image"
                     class="rounded-full w-48 h-48 object-cover relative">
@@ -246,13 +289,28 @@
                 </h2>
                 <p>This is a ERP/POS system for managing inventory and transactions of a textil business.</p>
                 <div class="flex flex-col">
-                    <h2><strong>Infrastructure</strong></h2>
-                    <ul class="flex flex-wrap gap-4">
+                    <h2 style="margin-bottom: 8px;
+                               margin-top: 10px;">
+                        <strong>Infrastructure</strong>
+                    </h2>
+                    <ul class="flex flex-wrap gap-2 items-center justify-center">
                         <li>
                             <p>Render</p>
                         </li>
                         <li>
                             <p>FastAPI</p>
+                        </li>
+                        <li>
+                            <p>SQLAlchemy</p>
+                        </li>
+                        <li>
+                            <p>Pydantic</p>
+                        </li>
+                        <li>
+                            <p>Alembic</p>
+                        </li>
+                        <li>
+                            <p>TailwindCSS</p>
                         </li>
                     </ul>
                 </div>
@@ -264,20 +322,64 @@
                 </div>
             </article>
             <article
-                class="project flex flex-col gap-4 items-center justify-center text-center w-100 h-120 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-xl dark:shadow-red-700 bg-gray-900 hover:scale-101 transition-all duration-300">
+                class="project flex flex-col gap-4 items-center justify-center text-center w-100 h-150 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
                 <span class="text-red-300"><strong>On builting</strong></span>
                 <img src="img/app-en-construccion.svg" alt="Project Image"
                     class="rounded-full w-48 h-48 object-cover relative">
                 <h2><strong>Portfolio JCJDevelop</strong></h2>
-                <p>This is a simple portfolio and its management content with Next.js (Learning while developing)</p>
+                <p>This is a simple portfolio and its management content with Next.js (Learning Next.js while
+                    developing)</p>
                 <div class="flex flex-col">
-                    <h2><strong>Infrastructure</strong></h2>
-                    <ul class="flex flex-wrap gap-4">
+                    <h2 style="margin-bottom: 8px;
+                               margin-top: 10px;">
+                        <strong>Infrastructure</strong>
+                    </h2>
+                    <ul class="flex flex-wrap gap-2 items-center justify-center">
                         <li>
-                            <p>Render</p>
+                            <p>Tailwind CSS</p>
                         </li>
                         <li>
                             <p>FastAPI</p>
+                        </li>
+                        <li>
+                            <p>Next.js (Learning)</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex gap-4">
+                    <a
+                        class="flex justify-center items-center w-20 h-10 bg-gray-800 rounded-lg cursor-not-allowed">GitHub</a>
+                    <a
+                        class="flex justify-center items-center w-20 h-10 bg-green-900 rounded-lg cursor-not-allowed">Project</a>
+                </div>
+            </article>
+            <article
+                class="project flex flex-col gap-4 items-center justify-center text-center w-100 h-150 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
+                <span class="text-red-300"><strong>On builting</strong></span>
+                <img src="img/app-en-construccion.svg" alt="Project Image"
+                    class="rounded-full w-48 h-48 object-cover relative">
+                <h2><strong>Rueda Libre | Riwi-Exercises</strong></h2>
+                <p>This is a simple landingpage that uses different type of frontend framework</p>
+                <div class="flex flex-col">
+                    <h2 style="margin-bottom: 8px;
+                               margin-top: 10px;">
+                        <strong>Infrastructure</strong>
+                    </h2>
+                    <ul class="flex flex-wrap gap-2 items-center justify-center">
+                        <li>
+                            <p>Tailwind CSS</p>
+                        </li>
+                        <li>
+                            <p>Bootstrap</p>
+                        </li>
+                        <li>
+                            <p>JavaScript</p>
+                        </li>
+                        <li>
+                            <p>CSS3</p>
+                        </li>
+                        <li>
+                            <p>HTML5</p>
                         </li>
                     </ul>
                 </div>
