@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Cuartas Jiménez | Personal portfolio </title>
     <meta name="description" content="This a personal portfolio project.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,7 +16,7 @@
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
     <div class="bg-grid-linear"></div>
     <header class="Navbar dark:bg-gray-900 rounded-lg dark:border-gray-900 shadow-xl/30 dark:shadow-black-800">
-        <a class="flex flex-row justify-center items-center gap-4" href="index.html">       
+        <a class="flex flex-row justify-center items-center gap-4" href="index.html">
             <img src="img/logo.png" alt="Logo" class="logo scale-100 hover:scale-105 transition-all duration-300">
             <strong>Personal Riwi Portfolio</strong>
         </a>
@@ -40,7 +43,7 @@
         <div class="principal-hero flex flex-col gap-4 items-center justify-center text-center my-8">
             <h1 class="text-3xl font-bold mb-4 text-shadow-xs dark:text-shadow-black-900"> <strong>Hi, I'm Juan Daniel
                     Cuartas Jiménez</strong> </h1>
-            <p class="width-200 max-w-2xl text-md mb-4">
+            <p class="width-200 max-w-2xl text-xl mb-4 text-gray-400">
                 I'm a passionate software developer from Training Center Riwi, that search to specialize in creating
                 efficient and
                 scalable web applications
@@ -50,8 +53,7 @@
             </p>
         </div>
 
-        <section class="skills" id="about">
-
+        <section class="skills" id="projects">
             <br>
             <br>
             <div class="skills-description text-center">
@@ -91,7 +93,8 @@
                     </li>
                     <li
                         class="flex w-50 h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-800 rounded-lg p-2 shadow-md dark:shadow-gray-800 bg-gray-200 dark:bg-gray-950 hover:scale-101 transition-all duration-300">
-                        <img width="48" height="48" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js"/>Node.js
+                        <img width="48" height="48" src="https://img.icons8.com/fluency/48/node-js.png"
+                            alt="node-js" />Node.js
                     </li>
                     <li
                         class="flex w-50 h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-800 rounded-lg p-2 shadow-md dark:shadow-gray-800 bg-gray-200 dark:bg-gray-950 hover:scale-101 transition-all duration-300">
@@ -107,7 +110,7 @@
                     <li
                         class="flex w-50 h-20 items-center justify-center text-center gap-2 border-2 border-gray-300 dark:border-gray-800 rounded-lg p-2 shadow-md dark:shadow-gray-800 bg-gray-200 dark:bg-gray-950 hover:scale-101 transition-all duration-300">
                         <img width="48" height="48"
-                            src="https://dashboardicons.com/api/icons/external/simpleicons/pydantic/light.png"
+                            src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/pydantic-logfire-light.png"
                             alt="pydantic--v1" />Pydantic
                     </li>
                     <li
@@ -145,7 +148,7 @@
                         <img width="48" height="48" src="https://img.icons8.com/fluency/48/bootstrap.png"
                             alt="bootstrap" />Bootstrap
                     </li>
-                </ul>   
+                </ul>
             </div>
         </section>
         <br>
@@ -159,30 +162,35 @@
         <br>
         <section class="personal-projects flex flex-wrap gap-8 justify-center items-center">
             <article
-                class="project flex flex-col gap-4 items-center justify-center text-center w-100 h-150 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
+                class="project flex flex-col gap-4 items-center justify-center text-center w-120 h-160 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
                 <span class="text-red-300"><strong>On builting</strong></span>
                 <img src="img/app-en-construccion.svg" alt="Project Image"
                     class="flex rounded-full w-48 h-48 object-cover">
-                <h2><strong>CRM JCJDevelop | Customer Relationship Management </strong></h2>
-                <p>This is a customer relationship management system <br> for handling client interactions, projects and
+                <h2 class="text-xl"><strong>CRM JCJDevelop</strong></h2>
+                <p class="text-gray-400">This is a customer relationship management system <br> for handling client
+                    interactions, projects and
                     data.</p>
                 <div class="flex flex-col">
                     <h2 style="margin-bottom: 8px;
                                margin-top: 10px;">
                         <strong>Infrastructure</strong>
                     </h2>
-                    <ul class="flex flex-wrap gap-2 items-center justify-center">
+                    <ul class="flex flex-wrap gap-6 items-center justify-center">
                         <li>
-                            <p>TailwindCSS</p>
+                            <img width="48" height="48" src="https://img.icons8.com/fluency/96/tailwind_css.png"
+                                alt="tailwind_css" />
                         </li>
                         <li>
-                            <p>JavaScript/TypeScript</p>
+                            <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1" />
                         </li>
                         <li>
-                            <p>Next.js</p>
+                            <img width="58" height="58" src="https://img.icons8.com/color/48/nextjs--v1.png"
+                                alt="nextjs--v1" />
                         </li>
                         <li>
-                            <p>FastAPI</p>
+                            <img width="48" height="48"
+                                src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/fastapi.png"
+                                alt="fastapi--v1" />
                         </li>
                     </ul>
                 </div>
@@ -195,40 +203,50 @@
 
             </article>
             <article
-                class="project flex flex-col gap-3 items-center justify-center text-center w-100 h-150 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-green-200 bg-gray-900 hover:shadow-green-800 hover:shadow-xl hover:scale-101 transition-all duration-300">
+                class="project flex flex-col gap-3 items-center justify-center text-center w-120 h-160 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-green-200 bg-gray-900 hover:shadow-green-800 hover:shadow-xl hover:scale-101 transition-all duration-300">
                 <span class="text-green-200"><strong>On production</strong></span>
                 <img src="img/homeimage2.avif" alt="Project Image" class="rounded-full w-48 h-48 object-cover relative">
-                <h2><strong>AkaMenezBeat Store | Beat catalog and management</strong></h2>
-                <p>This is a beat catalog and management system for handling music inventory and sales.</p>
+                <h2 class="text-xl"><strong>AkaMenezBeat Store</strong></h2>
+                <p class="text-gray-400">This is a beat catalog and management system for handling music inventory and
+                    sales.</p>
                 <div class="flex flex-col">
                     <h2 style="margin-bottom: 8px;
                                margin-top: 10px;">
                         <strong>Infrastructure</strong>
                     </h2>
-                    <ul class="flex flex-wrap gap-2 items-center justify-center">
+                    <ul class="flex flex-wrap gap-6 items-center justify-center">
                         <li>
-                            <p>Render</p>
+                            <img shadow-md width="48" height="48" src="https://cdn.simpleicons.org/render/FFFFFF"
+                                alt="render--v1" />
                         </li>
                         <li>
-                            <p>FastAPI</p>
+                            <img width="48" height="48"
+                                src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/fastapi.png"
+                                alt="fastapi--v1" />
                         </li>
                         <li>
-                            <p>CloudFlare (R2 & Pages/Worker)</p>
+                            <img shadow-md width="48" height="48"
+                                src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-cloudflare-provides-content-delivery-network-services-ddos-mitigation-logo-color-tal-revivo.png"
+                                alt="external-cloudflare-provides-content-delivery-network-services-ddos-mitigation-logo-color-tal-revivo" />
                         </li>
                         <li>
-                            <p>HTML</p>
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png"
+                                alt="html-5--v1" />
                         </li>
                         <li>
-                            <p>CSS3</p>
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/css3--v1.png"
+                                alt="css3--v1" />
                         </li>
                         <li>
-                            <p>JavaScript</p>
+                            <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1" />
                         </li>
                         <li>
-                            <p>Neon | PostgreSQL</p>
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/postgreesql.png"
+                                alt="postgreesql" />
                         </li>
                         <li>
-                            <p>Resend (MailService)</p>
+                            <img class="shadow-md rounded-full" width="60" height="60"
+                                src="https://cdn.simpleicons.org/resend/FFFFFF" alt="resend--v1" />
                         </li>
                     </ul>
                 </div>
@@ -240,33 +258,34 @@
                 </div>
             </article>
             <article
-                class="project flex flex-col gap-3 items-center justify-center text-center w-100 h-150 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-green-200 bg-gray-900 hover:shadow-green-800 hover:shadow-xl hover:scale-101 transition-all duration-300">
+                class="project flex flex-col gap-3 items-center justify-center text-center w-120 h-160 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-green-200 bg-gray-900 hover:shadow-green-800 hover:shadow-xl hover:scale-101 transition-all duration-300">
                 <span class="text-green-200"><strong>On production</strong></span>
                 <img src="img/logo-licorera.svg" alt="Project Image"
                     class="rounded-full w-48 h-48 object-cover relative">
-                <h2><strong>Digital QR menu | GoogleSheets Product View Admin</strong></h2>
-                <p>This is a digital QR menu system integrated with <br> Google Sheets for product view and
+                <h2 class="text-xl"><strong>Digital menu with QR</strong></h2>
+                <p class="text-gray-400">This is a digital QR menu system integrated with <br> Google Sheets for product
+                    view and
                     administration.</p>
                 <div class="flex flex-col">
                     <h2 style="margin-bottom: 8px;
                                margin-top: 10px;">
                         <strong>Infrastructure</strong>
                     </h2>
-                    <ul class="flex flex-wrap gap-2 items-center justify-center">
+                    <ul class="flex flex-wrap gap-6 items-center justify-center">
                         <li>
-                            <p>TailwindCSS</p>
+                            <img width="48" height="48" src="https://img.icons8.com/fluency/96/tailwind_css.png"
+                                alt="tailwind_css" />
                         </li>
                         <li>
-                            <p>JavaScript</p>
+                            <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1" />
                         </li>
                         <li>
-                            <p>HTML</p>
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png"
+                                alt="html-5--v1" />
                         </li>
                         <li>
-                            <p>AppScript</p>
-                        </li>
-                        <li>
-                            <p>GoogleSheets</p>
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/google-sheets.png"
+                                alt="google-sheets" />
                         </li>
                     </ul>
                 </div>
@@ -280,36 +299,46 @@
                 </div>
             </article>
             <article
-                class="project flex flex-col gap-4 items-center justify-center text-center w-100 h-150 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
+                class="project flex flex-col gap-4 items-center justify-center text-center w-120 h-160 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
                 <span class="text-red-300"><strong>On builting</strong></span>
                 <img src="img/app-en-construccion.svg" alt="Project Image"
                     class="rounded-full w-48 h-48 object-cover relative">
-                <h2><strong>Blesed Fruit ERP/POS | Website for inventory auditing and transaction management</strong>
+                <h2 class="text-xl"><strong>Blesed Fruit ERP/POS</strong>
                 </h2>
-                <p>This is a ERP/POS system for managing inventory and transactions of a textil business.</p>
+                <p class="text-gray-400">This is a ERP/POS system for managing inventory and transactions of a textil
+                    business.</p>
                 <div class="flex flex-col">
                     <h2 style="margin-bottom: 8px;
                                margin-top: 10px;">
                         <strong>Infrastructure</strong>
                     </h2>
-                    <ul class="flex flex-wrap gap-2 items-center justify-center">
+                    <ul class="flex flex-wrap gap-6 items-center justify-center">
                         <li>
-                            <p>Render</p>
+                            <img shadow-md width="48" height="48" src="https://cdn.simpleicons.org/render/FFFFFF"
+                                alt="render--v1" />
                         </li>
                         <li>
-                            <p>FastAPI</p>
+                            <img width="48" height="48"
+                                src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/fastapi.png"
+                                alt="fastapi--v1" />
                         </li>
                         <li>
-                            <p>SQLAlchemy</p>
+                            <img width="58" height="58"
+                                src="https://dashboardicons.com/api/icons/external/simpleicons/sqlalchemy/brand.png"
+                                alt="sqlalchemy">
                         </li>
                         <li>
-                            <p>Pydantic</p>
+                            <img width="48" height="48"
+                                src="https://cdn.jsdelivr.net/gh/selfhst/icons/png/pydantic-logfire-light.png"
+                                alt="pydantic--v1" />
                         </li>
                         <li>
-                            <p>Alembic</p>
+                            <img width="48" height="48" src="https://img.icons8.com/emoji/48/alembic.png"
+                                alt="alembic" />
                         </li>
                         <li>
-                            <p>TailwindCSS</p>
+                            <img width="48" height="48" src="https://img.icons8.com/fluency/96/tailwind_css.png"
+                                alt="tailwind_css" />
                         </li>
                     </ul>
                 </div>
@@ -321,27 +350,32 @@
                 </div>
             </article>
             <article
-                class="project flex flex-col gap-4 items-center justify-center text-center w-100 h-150 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
+                class="project flex flex-col gap-4 items-center justify-center text-center w-120 h-160 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
                 <span class="text-red-300"><strong>On builting</strong></span>
                 <img src="img/app-en-construccion.svg" alt="Project Image"
                     class="rounded-full w-48 h-48 object-cover relative">
-                <h2><strong>Portfolio JCJDevelop</strong></h2>
-                <p>This is a simple portfolio and its management content with Next.js (Learning Next.js while
+                <h2 class="text-xl"><strong>Portfolio JCJDevelop</strong></h2>
+                <p class="text-gray-400">This is a simple portfolio and its management content with Next.js (Learning
+                    Next.js while
                     developing)</p>
                 <div class="flex flex-col">
                     <h2 style="margin-bottom: 8px;
                                margin-top: 10px;">
                         <strong>Infrastructure</strong>
                     </h2>
-                    <ul class="flex flex-wrap gap-2 items-center justify-center">
+                    <ul class="flex flex-wrap gap-6 items-center justify-center">
                         <li>
-                            <p>Tailwind CSS</p>
+                            <img width="48" height="48" src="https://img.icons8.com/fluency/96/tailwind_css.png"
+                                alt="tailwind_css" />
                         </li>
                         <li>
-                            <p>FastAPI</p>
+                            <img width="48" height="48"
+                                src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/fastapi.png"
+                                alt="fastapi--v1" />
                         </li>
                         <li>
-                            <p>Next.js (Learning)</p>
+                            <img width="58" height="58" src="https://img.icons8.com/color/48/nextjs--v1.png"
+                                alt="nextjs--v1" />
                         </li>
                     </ul>
                 </div>
@@ -353,12 +387,12 @@
                 </div>
             </article>
             <article
-                class="project flex flex-col gap-4 items-center justify-center text-center w-100 h-150 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
+                class="project flex flex-col gap-4 items-center justify-center text-center w-120 h-160 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
                 <span class="text-red-300"><strong>On builting</strong></span>
                 <img src="img/app-en-construccion.svg" alt="Project Image"
                     class="rounded-full w-48 h-48 object-cover relative">
-                <h2><strong>Rueda Libre Vanilla Version | Riwi-Exercises</strong></h2>
-                <p>This is a simple landingpage that uses different type of frontend framework</p>
+                <h2 class="text-xl"><strong>Rueda Libre Vanilla Version</strong></h2>
+                <p class="text-gray-400">This is a simple landingpage that uses different type of frontend framework</p>
                 <div class="flex flex-col">
                     <h2 style="margin-bottom: 8px;
                                margin-top: 10px;">
@@ -380,20 +414,22 @@
                     </ul>
                 </div>
                 <div class="flex gap-4">
-                    <a  href="https://github.com/AkaDevelop/Ejercicios-practicos./tree/main/sitiowebestatico-ruedalibre" target="_blank"
+                    <a href="https://github.com/AkaDevelop/Ejercicios-practicos./tree/main/sitiowebestatico-ruedalibre"
+                        target="_blank"
                         class="flex justify-center items-center w-20 h-10 bg-gray-700 rounded-lg hover:scale-105 transition-all duration-300">GitHub</a>
-                    <a  href="https://akadevelop.github.io/Ejercicios-practicos./sitiowebestatico-ruedalibre/" target="_blank"
+                    <a href="https://akadevelop.github.io/Ejercicios-practicos./sitiowebestatico-ruedalibre/"
+                        target="_blank"
                         class="flex justify-center items-center w-20 h-10 bg-green-700 rounded-lg hover:scale-105 transition-all duration-300">Project
                     </a>
                 </div>
             </article>
             <article
-                class="project flex flex-col gap-4 items-center justify-center text-center w-100 h-150 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
+                class="project flex flex-col gap-4 items-center justify-center text-center w-120 h-160 border-2 border-gray-300 dark:border-gray-700 rounded-lg p-2 shadow-md dark:shadow-red-400 bg-gray-900 hover:shadow-red-700 hover:shadow-xl hover:scale-101 transition-all duration-300">
                 <span class="text-red-300"><strong>On builting</strong></span>
                 <img src="img/app-en-construccion.svg" alt="Project Image"
                     class="rounded-full w-48 h-48 object-cover relative">
-                <h2><strong>Rueda Libre Bootstrap Version | Riwi-Exercises</strong></h2>
-                <p>This is a simple landingpage that uses different type of frontend framework</p>
+                <h2 class="text-xl"><strong>Rueda Libre Bootstrap Version</strong></h2>
+                <p class="text-gray-400">This is a simple landingpage that uses different type of frontend framework</p>
                 <div class="flex flex-col">
                     <h2 style="margin-bottom: 8px;
                                margin-top: 10px;">
@@ -418,19 +454,21 @@
                     </ul>
                 </div>
                 <div class="flex gap-4">
-                    <a  href="https://github.com/AkaDevelop/Ejercicios-practicos./tree/main/sitiowebestatico-bootstrap" target="_blank"
+                    <a href="https://github.com/AkaDevelop/Ejercicios-practicos./tree/main/sitiowebestatico-bootstrap"
+                        target="_blank"
                         class="flex justify-center items-center w-20 h-10 bg-gray-700 rounded-lg hover:scale-105 transition-all duration-300">GitHub</a>
-                    <a  href="https://akadevelop.github.io/Ejercicios-practicos./sitiowebestatico-bootstrap/" target="_blank"
+                    <a href="https://akadevelop.github.io/Ejercicios-practicos./sitiowebestatico-bootstrap/"
+                        target="_blank"
                         class="flex justify-center items-center w-20 h-10 bg-green-700 rounded-lg hover:scale-105 transition-all duration-300">Project
                     </a>
                 </div>
             </article>
         </section>
         </div>
-
-        <section class="contactme" id="#contact">
-            <h2>Contact me</h2>
-            <p></p>
+        <br><br><br>
+        <section class="flex flex-col justify-center items-center" id="contact">
+            <h2 class="text-2xl font-bold mb-4" id="contact"> <strong>Contact me</strong></h2>
+            <p class="text-gray-400">You can contact me through any of my social media accounts.</p>
         </section>
 
     </main>

@@ -14,6 +14,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
 }
 
 .bg-grid-linear {
@@ -29,7 +33,7 @@
             rgba(253, 251, 251, 0.1) 1px,
             transparent 1px,
             transparent 40px);
-    position:fixed;
+    position: fixed;
     opacity: 0.4;
     width: 100vw;
     height: 100vh;
