@@ -1,13 +1,11 @@
 :root {
-    /*Colors*/
+    /* Colors */
     --Dark-red-color: #ce0e0e;
     --Background-color: #1f1d1d;
     --White: #fff;
-    /*FontSize*/
+
+    /* Font sizes */
     --fontsize-xs: 0.9rem;
-
-
-    /*Bolt*/
 }
 
 * {
@@ -20,43 +18,417 @@
     letter-spacing: 1px;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
 .bg-grid-linear {
     mask-image: radial-gradient(circle at center, black 10%, transparent 90%);
     -webkit-mask-image: radial-gradient(circle at center, black 10%, transparent 90%);
-    background-image: repeating-linear-gradient(to right,
+
+    background-image:
+        repeating-linear-gradient(
+            to right,
             rgba(255, 255, 255, 0.1) 0px,
             rgba(253, 251, 251, 0.1) 1px,
             transparent 1px,
-            transparent 40px),
-        repeating-linear-gradient(to bottom,
+            transparent 40px
+        ),
+        repeating-linear-gradient(
+            to bottom,
             rgba(255, 255, 255, 0.1) 0px,
             rgba(253, 251, 251, 0.1) 1px,
             transparent 1px,
-            transparent 40px);
+            transparent 40px
+        );
+
     position: fixed;
     opacity: 0.4;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-
+    top: 0;
+    left: 0;
     z-index: -1;
+    pointer-events: none;
 }
+
 
 .Navbar {
     position: sticky;
     top: 0;
     width: 100%;
-    height: 90px;
+    min-height: 90px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1px;
-    padding: 20px;
+
+    padding: 15px 5%;
     color: var(--White);
-    z-index: 1;
+    z-index: 10;
+}
+
+.Navbar > a {
+    text-decoration: none;
+    color: var(--White);
+}
+
+.Navbar .logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
 }
 
 .Navbar ul {
     display: flex;
-    gap: 50px;
+    align-items: center;
+    gap: 35px;
     list-style: none;
+}
+
+.Navbar ul a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.Navbar ul a:hover {
+    color: var(--Dark-red-color);
+}
+
+main {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.profileskill-image {
+    gap: 0;
+    padding: 30px 15px;
+}
+
+.profileskill-image img {
+    width: clamp(130px, 20vw, 230px);
+    height: clamp(130px, 20vw, 230px);
+    object-fit: cover;
+}
+
+.profileskill-image img:nth-child(2) {
+    right: auto;
+    margin-left: -25px;
+}
+
+.principal-hero {
+    padding: 20px;
+}
+
+.principal-hero h1 {
+    line-height: 1.4;
+}
+
+.principal-hero p {
+    width: 100%;
+    max-width: 750px;
+    line-height: 1.8;
+}
+
+.skills {
+    padding: 40px 15px;
+}
+
+.skills-list {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.skills-list li {
+    flex: 1 1 190px;
+    max-width: 220px;
+    min-width: 150px;
+    min-height: 80px;
+}
+
+.skills-list img {
+    max-width: 48px;
+    height: auto;
+    object-fit: contain;
+}
+
+.personal-projects {
+    width: 100%;
+    padding: 20px;
+    gap: 30px;
+}
+
+.project {
+    width: min(100%, 480px);
+    height: auto;
+    min-height: 600px;
+    padding: 25px 20px;
+    flex: 1 1 350px;
+    max-width: 480px;
+    overflow-wrap: anywhere;
+}
+
+.project > img {
+    width: clamp(130px, 40%, 190px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.project p {
+    max-width: 100%;
+    line-height: 1.6;
+}
+
+.project ul {
+    gap: 15px;
+}
+
+.project ul img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.project a {
+    text-decoration: none;
+    color: var(--White);
+}
+
+.project a:hover {
+    filter: brightness(1.2);
+}
+
+/* Contact */
+
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact p {
+    line-height: 1.7;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    padding: 35px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    background-color: #111;
+    border-top: 2px solid #333;
+    color: var(--White);
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer > div p {
+    font-size: 1rem;
+}
+
+footer > div span {
+    color: #999;
+    font-size: var(--fontsize-xs);
+}
+
+footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+footer nav a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: var(--Dark-red-color);
+}
+
+
+@media (max-width: 768px) {
+    .Navbar {
+        padding: 15px 20px;
+        min-height: 80px;
+    }
+
+    .Navbar ul {
+        gap: 15px;
+    }
+
+    .Navbar ul a {
+        font-size: 0.8rem;
+    }
+
+    .Navbar > a {
+        gap: 10px;
+    }
+
+    .Navbar > a strong {
+        font-size: 0.85rem;
+    }
+
+    .personal-projects {
+        gap: 25px;
+    }
+
+    .project {
+        flex: 1 1 300px;
+        min-height: 580px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media  (max-width: 480px) {
+
+    #logo-brand{
+        display: none;
+    }
+    
+    .Navbar {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        gap: 18px;
+        padding: 15px 10px;
+    }
+
+    .Navbar > a {
+        justify-content: center;
+    }
+
+    .Navbar ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .Navbar ul a {
+        font-size: 0.75rem;
+    }
+
+    .profileskill-image {
+        padding: 20px 10px;
+    }
+
+    .profileskill-image img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .profileskill-image img:nth-child(2) {
+        margin-left: -15px;
+    }
+
+    .principal-hero {
+        padding: 15px 10px;
+    }
+
+    .principal-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .principal-hero p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .skills {
+        padding: 25px 10px;
+    }
+
+    .skills-list {
+        gap: 12px;
+    }
+
+    .skills-list li {
+        flex: 1 1 140px;
+        min-width: 130px;
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .skills-list img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .personal-projects {
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .project {
+        width: 100%;
+        min-width: 0;
+        min-height: 0;
+        flex: 1 1 100%;
+        padding: 25px 15px;
+    }
+
+    .project h2 {
+        font-size: 1.1rem;
+    }
+
+    .project p {
+        font-size: 0.85rem;
+    }
+
+    .project ul {
+        gap: 10px;
+    }
+
+    .project ul img {
+        width: 35px;
+        height: 35px;
+    }
+
+    #contact {
+        padding: 35px 15px;
+    }
+
+    #contact p {
+        font-size: 0.85rem;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
+
+    footer nav ul {
+        gap: 15px;
+    }
+
+    footer nav a {
+        font-size: 0.8rem;
+    }
 }

@@ -15,10 +15,9 @@
 
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
     <div class="bg-grid-linear"></div>
-    <header class="Navbar dark:bg-gray-900 rounded-lg dark:border-gray-900 shadow-xl/30 dark:shadow-black-800">
-        <a class="flex flex-row justify-center items-center gap-4" href="index.html">
+    <header id="home" class="Navbar dark:bg-gray-900 rounded-lg dark:border-gray-900 shadow-xl/30 dark:shadow-black-800">
+        <a class="flex flex-row justify-center items-center gap-4" id="logo-brand" href="">
             <img src="img/logo.png" alt="Logo" class="logo scale-100 hover:scale-105 transition-all duration-300">
-            <strong>Personal Riwi Portfolio</strong>
         </a>
         <nav>
             <ul>
@@ -44,16 +43,19 @@
             <h1 class="text-3xl font-bold mb-4 text-shadow-xs dark:text-shadow-black-900"> <strong>Hi, I'm Juan Daniel
                     Cuartas Jiménez</strong> </h1>
             <p class="width-200 max-w-2xl text-xl mb-4 text-gray-400">
-                I'm a passionate software developer from Training Center Riwi, that search to specialize in creating
+                I'm a passionate software developer. Member from Training Center Riwi, that search to specialize in
+                creating
                 efficient and
                 scalable web applications
                 using modern tecnhologies. I have foundations in programming languages such as JavaScript,
                 Python and bit Java.
-                and I'm constantly learning new tools and frameworks to stay up-to-date with the latest industry trends.
+                and I'm constantly learning new tools and frameworks to stay up-to-date with the latest industry trends
+                for building projects and real solutions. This is how I constantly learn, by generating technological
+                needs and building applications to solve them.
             </p>
         </div>
 
-        <section class="skills" id="projects">
+        <section class="skills">
             <br>
             <br>
             <div class="skills-description text-center">
@@ -392,7 +394,7 @@
                 <img src="img/app-en-construccion.svg" alt="Project Image"
                     class="rounded-full w-48 h-48 object-cover relative">
                 <h2 class="text-xl"><strong>Rueda Libre Vanilla Version</strong></h2>
-                <p class="text-gray-400">This is a simple landingpage that uses different type of frontend framework</p>
+                <p class="text-gray-400">This is a simple landingpage that uses HTML5 and CSS3 Vanilla.</p>
                 <div class="flex flex-col">
                     <h2 style="margin-bottom: 8px;
                                margin-top: 10px;">
@@ -400,16 +402,12 @@
                     </h2>
                     <ul class="flex flex-wrap gap-2 items-center justify-center">
                         <li>
-                            <p>Tailwind CSS</p>
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/css3--v1.png"
+                                alt="css3--v1" />
                         </li>
                         <li>
-                            <p>JavaScript</p>
-                        </li>
-                        <li>
-                            <p>CSS3</p>
-                        </li>
-                        <li>
-                            <p>HTML5</p>
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png"
+                                alt="html-5--v1" />
                         </li>
                     </ul>
                 </div>
@@ -428,8 +426,9 @@
                 <span class="text-red-300"><strong>On builting</strong></span>
                 <img src="img/app-en-construccion.svg" alt="Project Image"
                     class="rounded-full w-48 h-48 object-cover relative">
-                <h2 class="text-xl"><strong>Rueda Libre Bootstrap Version</strong></h2>
-                <p class="text-gray-400">This is a simple landingpage that uses different type of frontend framework</p>
+                <h2 class="text-xl"><strong>Rueda Nocturna</strong></h2>
+                <p class="text-gray-400">This is a extension page of "Rueda Libre" using Bootstrap a frontend framework.
+                </p>
                 <div class="flex flex-col">
                     <h2 style="margin-bottom: 8px;
                                margin-top: 10px;">
@@ -437,19 +436,16 @@
                     </h2>
                     <ul class="flex flex-wrap gap-2 items-center justify-center">
                         <li>
-                            <p>Tailwind CSS</p>
+                            <img width="48" height="48" src="https://img.icons8.com/fluency/48/bootstrap.png"
+                                alt="bootstrap" />
                         </li>
                         <li>
-                            <p>Bootstrap</p>
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/css3--v1.png"
+                                alt="css3--v1" />
                         </li>
                         <li>
-                            <p>JavaScript</p>
-                        </li>
-                        <li>
-                            <p>CSS3</p>
-                        </li>
-                        <li>
-                            <p>HTML5</p>
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png"
+                                alt="html-5--v1" />
                         </li>
                     </ul>
                 </div>
@@ -467,7 +463,7 @@
         </div>
         <br><br><br>
         <section class="flex flex-col justify-center items-center" id="contact">
-            <h2 class="text-2xl font-bold mb-4" id="contact"> <strong>Contact me</strong></h2>
+            <h2 class="text-2xl font-bold mb-4"> <strong>Contact me</strong></h2>
             <p class="text-gray-400">You can contact me through any of my social media accounts.</p>
         </section>
 
@@ -475,15 +471,15 @@
     <footer>
         <div>
             <p>Built by JCJ Develop (Juan Daniel Cuartas Jiménez)</p>
-            <span>Software developer</span>
+            <span>Software developer | Backend focused</span>
+            <span>© 2024 - All rights reserved.</span>
         </div>
+
         <nav>
             <ul>
-                <li> <a href="">HOME</a></li>
-                <li> <a href="">Projects</a></li>
-                <li> <a href=""> About</a></li>
-                <li> <a href="">Correo</a></li>
-                <li> <a href="">WhatsApp</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </footer>
