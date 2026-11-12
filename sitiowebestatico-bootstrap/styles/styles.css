@@ -51,8 +51,8 @@ body{
 }
 /*Estilos para el circulo de fondo*/
 .circulo{
-    position: absolute;
-    border-radius: 50%;
+    position:fixed;
+    border-radius: 50%; 
     width: 600px;
     height: 600px;
     background-color: var(--desert-color-darker);
