@@ -1,4 +1,4 @@
-# 🚀 Ejercicios Prácticos
+# 🚀 Ejercicios Prácticos - Riwi
 
 ## 📌 Descripción
 
@@ -99,5 +99,5 @@ Estudiante de desarrollo de software con interés en la construcción de solucio
 ---
 
 <p align="center">
-  <strong>💡 Cada ejercicio es una oportunidad para aprender algo nuevo.</strong>
+  <strong>💡 Cada ejercicio es una oportunidad para aprender algo nuevo. 💡</strong>
 </p>
