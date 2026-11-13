@@ -49,22 +49,7 @@ body{
     font-weight:var(--Bolt-400);
     overflow-x: hidden;
 }
-/*Estilos para el circulo de fondo*/
-.circulo{
-    position:absolute;
-    border-radius: 50%; 
-    width: 600px;
-    height: 600px;
-    background-color: var(--desert-color-darker);
-    opacity: 0.4;
-    top: 15%;
-    left: 15%;
-    filter: blur(300px);
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 h1, h2{
     color: var(--White);
@@ -223,20 +208,23 @@ a:hover {
 
 /* BACKGROUND EFFECT */
 
-.circulo {
-    position: fixed;
-    width: 500px;
-    height: 500px;
-    top: 10%;
-    left: 10%;
 
-    border-radius: 50%;
+/*Estilos para el circulo de fondo*/
+.circulo{
+    position:fixed;
+    pointer-events: none;
+    border-radius: 50%; 
+    width: 600px;
+    height: 600px;
     background-color: var(--desert-color-darker);
     opacity: 0.12;
-    filter: blur(180px);
-
+    top: 15%;
+    left: 15%;
+    filter: blur(300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: -1;
-    pointer-events: none;
 }
 
 /* NAVBAR */
@@ -285,15 +273,13 @@ header {
 
 .navbar-toggler {
     border-color: var(--border-color);
+    color: #fff;
 }
 
 .navbar-toggler:focus {
     box-shadow: 0 0 0 0.15rem rgba(253, 171, 108, 0.3);
 }
 
-.navbar-toggler-icon {
-    filter: invert(1);
-}
 
 /* MAIN */
 
@@ -724,12 +710,29 @@ footer p {
     font-size: 0.85rem;
 }
 
+.inicio-hero{
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.inicio-hero article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
 /* TABLETS */
 
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
 
     .inicio-hero {
         grid-template-columns: 1fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 40px;
         padding: 60px 7%;
     }
@@ -756,7 +759,7 @@ footer p {
 
 /* MOBILE */
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
 
     body {
         font-size: 0.95rem;
@@ -844,25 +847,13 @@ footer p {
     }
 
     .whatsapp-float img {
-        width: 34px;
-        height: 34px;
+        width: 54px;
+        height: 54px;
     }
 
 }
 
-.inicio-hero{
-    margin: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-}
 
-.inicio-hero article{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;    
-}
 
 .hero-image{
     width: 100%; 

@@ -315,7 +315,6 @@ footer nav a:hover {
     }
     
     .Navbar {
-        position: relative;
         flex-direction: column;
         justify-content: center;
         gap: 18px;
