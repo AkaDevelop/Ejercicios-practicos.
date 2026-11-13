@@ -1,9 +1,5 @@
 # 🚀 Ejercicios Prácticos
 
-<p align="center">
-  <strong>Aprendiendo, practicando y fortaleciendo habilidades de programación.</strong>
-</p>
-
 ## 📌 Descripción
 
 Este repositorio contiene una colección de ejercicios prácticos desarrollados durante mi proceso de formación en programación y desarrollo de software.
@@ -26,11 +22,29 @@ Cada ejercicio representa una oportunidad para experimentar, aprender nuevas her
 Los ejercicios se encuentran organizados en directorios según las actividades y los temas trabajados durante el proceso de formación.
 
 ```text
-Ejercicios-practicos/
+Ejercicios-practicos./
 │
 ├── README.md
 │
-├── ejercicios/
+├── styles.css
+│
+├── index.html
+│
+├── .gitignore
+│
+├── Algorithm_Exercices/
+│   └── ...
+│
+├── IA_Projects/
+│   └── ...
+│
+├── img/
+│   └── ...
+│
+├── sitiowebestatico-bootstrap/
+│   └── ...
+│
+├── sitiowebestatico-ruedalibre/
 │   └── ...
 │
 └── ...
@@ -42,7 +56,8 @@ Ejercicios-practicos/
 
 Las tecnologías y herramientas utilizadas dependerán de los conceptos abordados en cada ejercicio.
 
-- **Lenguajes de programación:** según cada actividad.
+- **Lenguajes de programación:** JS.
+- **Tecnologías y frameworks:** HTML5, CSS3, Tailwind CSS, Bootstrap
 - **Visual Studio Code:** entorno de desarrollo.
 - **Git:** control de versiones.
 - **GitHub:** almacenamiento y seguimiento del código.
@@ -62,9 +77,9 @@ El desarrollo de los ejercicios sigue un proceso de aprendizaje práctico:
 Si deseas obtener una copia local del proyecto, ejecuta los siguientes comandos:
 
 ```bash
-git clone https://github.com/AkaDevelop/Ejercicios-practicos.git
+git clone https://github.com/AkaDevelop/Ejercicios-practicos.
 
-cd Ejercicios-practicos
+cd Ejercicios-practicos.
 ```
 
 ## Evolución del proyecto
