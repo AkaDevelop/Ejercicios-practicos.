@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
         defer>
-    </script>
+        </script>
 
     <title>Rueda Libre | Reservas</title>
 </head>
@@ -45,13 +45,18 @@
                     <ul class="navbar-nav ms-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">
+                            <a class="nav-link" href="../../sitiowebestatico-ruedalibre/index.html">
                                 Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../sitiowebestatico-bootstrap/index.html">
+                                Rueda Nocturna
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="reservas.html">
+                            <a class="nav-link active" href="reservas.html">
                                 Reservas
                             </a>
                         </li>
@@ -71,40 +76,33 @@
     </header>
 
     <main>
-
-        <div>
-            <p>Haz tu reserva enviándonos una solicitud por
-                <a href="mailto:info@ruedalibre.com"><strong>CORREO</strong></a>
-                rellenado el formulario de contacto, o llamándonos al
-                <a href="tel:+5741234567"><strong>+57 4 123 4567</strong></a>
-            </p>
-        </div>
         <section>
-
             <form class="servicios" action="mailto:info@ruedalibre.com" method="post">
                 <div class="form-field">
                     <legend>Información de contacto</legend>
-                    <p>
+                    <div class="mb-3">
                         <label class="form-label" for="nombre">Nombre:</label>
-                        <input class="form-control" type="text" id="nombre" placeholder="Pepito Luis" name="nombre"
+                        <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Pepito Luis"
                             minlength="3" required>
-                    </p>
-                    <p>
+                    </div>
+
+                    <div class="mb-3">
                         <label class="form-label" for="documento">Documento:</label>
-                        <input class="form-control" type="number" id="documento" placeholder="126752489"
-                            name="documento" minlength="6" maxlength="10" required>
-                    </p>
-                    <p>
+                        <input class="form-control" type="number" id="documento" name="documento"
+                            placeholder="126752489" required>
+                    </div>
+
+                    <div class="mb-3">
                         <label class="form-label" for="email">Correo electrónico:</label>
-                        <input class="form-control" type="email" id="email" placeholder="pepitoflorez@ejemplo.com"
-                            name="email" required>
-                    </p>
-                    <p>
+                        <input class="form-control" type="email" id="email" name="email"
+                            placeholder="correo@ejemplo.com" required>
+                    </div>
+
+                    <div class="mb-3">
                         <label class="form-label" for="telefono">Teléfono:</label>
-                        <input class="form-control" type="tel" id="telefono" placeholder="+57 4 123 4567"
-                            name="telefono" maxlength="10" minlength="10" pattern="^3.*"
-                            title="El número de telefóno debe iniciar por 3" required>
-                    </p>
+                        <input class="form-control" type="tel" id="telefono" name="telefono"
+                            placeholder="+57 300 000 0000" required>
+                    </div>
                 </div>
                 <fieldset>
                     <legend>Detalles de la reserva</legend>
@@ -151,6 +149,9 @@
                             <option value="name1">Rios Parque</option>
                             <option value="name2">Sabores de barrio</option>
                             <option value="name3">Reto las palmas</option>
+                            <option value="name1">Luces del centro</option>
+                            <option value="name2">Miradores de la ciudad</option>
+                            <option value="name3">Luna las palmas</option>
                         </select>
                     </p>
                     <p>
