@@ -8,6 +8,7 @@
     <meta name="description" content="This a personal portfolio project.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
     <link rel="stylesheet" href="styles.css">
@@ -15,7 +16,8 @@
 
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
     <div class="bg-grid-linear"></div>
-    <header id="home" class="Navbar dark:bg-gray-900 rounded-lg dark:border-gray-900 shadow-xl/30 dark:shadow-black-800">
+    <header id="home"
+        class="Navbar dark:bg-gray-900 rounded-lg dark:border-gray-900 shadow-xl/30 dark:shadow-black-800">
         <a class="flex flex-row justify-center items-center gap-4" id="logo-brand" href="">
             <img src="img/logo.png" alt="Logo" class="logo scale-100 hover:scale-105 transition-all duration-300">
         </a>
@@ -462,10 +464,45 @@
         </section>
         </div>
         <br><br><br>
-        <section class="flex flex-col justify-center items-center" id="contact">
-            <h2 class="text-2xl font-bold mb-4"> <strong>Contact me</strong></h2>
-            <p class="text-gray-400">You can contact me through any of my social media accounts.</p>
+
+        <section class="flex flex-col justify-center items-center text-center py-16 px-6" id="contact">
+            <h2 class="text-3xl font-bold mb-4">
+                <strong>Contact me</strong>
+            </h2>
+
+            <p class="text-gray-400 max-w-xl mb-8">
+                Have a project in mind or want to work together?
+                Feel free to contact me through any of my platforms.
+            </p>
+            <br>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://github.com/AkaDevelop" target="_blank" rel="noopener noreferrer"
+                    class="flex items-center gap-3 px-6 py-3 rounded-lg bg-gray-800 text-white hover:bg-gray-700 hover:scale-105 transition-all duration-300">
+                    <i class="fa-brands fa-github text-xl"></i>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="https://www.instagram.com/JCJDevelop/" target="_blank" rel="noopener noreferrer"
+                    class="flex items-center gap-3 px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white hover:scale-105 transition-all duration-300">
+                    <i class="fa-brands fa-instagram text-xl"></i>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="mailto:jcjdevelop@gmail.com"
+                    class="flex items-center gap-3 px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-500 hover:scale-105 transition-all duration-300">
+                    <i class="fa-solid fa-envelope text-xl"></i>
+                    <span>Email</span>
+                </a>
+
+                <a href="https://wa.me/573127729329" target="_blank" rel="noopener noreferrer"
+                    class="flex items-center gap-3 px-6 py-3 rounded-lg bg-green-600 text-white hover:bg-green-500 hover:scale-105 transition-all duration-300">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>WhatsApp</span>
+                </a>
+
+            </div>
         </section>
+
 
     </main>
     <footer>
